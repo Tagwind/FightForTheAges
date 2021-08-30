@@ -57,7 +57,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
-    - _Cutoff: 0.5
+    - _Cutoff: 0.521
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
@@ -87,10 +87,10 @@ Material:
     - _tree_sway_stutter_influence: 0.2
     - _wiggle_disp: 0.13
     - _wiggle_speed: 1
-    - _wind_size: 5
+    - _wind_size: 50
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Tint: {r: 1, g: 1, b: 1, a: 1}
-    - _wind_dir: {r: 0.3, g: 0.2, b: 0.3, a: 0}
+    - _wind_dir: {r: 0.2, g: 0.2, b: 0.3, a: 0}
   m_BuildTextureStacks: []

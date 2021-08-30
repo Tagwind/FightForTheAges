@@ -5,12 +5,11 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider))]
 public class BoxColliderCheck : MonoBehaviour
 {
-    [SerializeField]
-    private bool isBuildable = true;
+    public bool isBuildable = true;
     [SerializeField]
     private int collisionHit = 0;
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (collisionHit > 0)
         {
@@ -24,7 +23,6 @@ public class BoxColliderCheck : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Entered Box");
         if (other.gameObject.tag != "Terrain") collisionHit++;
     }
 
@@ -33,6 +31,6 @@ public class BoxColliderCheck : MonoBehaviour
         if (other.gameObject.tag != "Terrain") collisionHit--;
     }
 
-    public bool CanBuild { get => isBuildable; }
+
 
 }

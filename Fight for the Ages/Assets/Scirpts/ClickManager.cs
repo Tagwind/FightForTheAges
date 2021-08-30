@@ -68,8 +68,7 @@ public class ClickManager : MonoBehaviour
 
     private bool CanBuild()
     {
-
-        if (building.Transform.GetComponentInChildren<BoxColliderCheck>().CanBuild)
+        if (building.Transform.GetComponentInChildren<BoxColliderCheck>().isBuildable)
         {
             return true;
         }
